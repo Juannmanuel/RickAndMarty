@@ -1,0 +1,25 @@
+.cards {
+    text-align: center;
+    display: flex;
+    grid-template-columns: auto;
+    grid-gap: 14px;
+    transform: translate(3%, 25%);
+    width: 1450px;
+
+    /* background-color: blue;
+    color: black;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+    cursor: pointer; */
+}
+
+;
