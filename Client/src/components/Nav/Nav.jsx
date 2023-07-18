@@ -20,6 +20,10 @@ function Nav({onSearch}) {
                 <NavLink to = "/Home">Home</NavLink>
             </button>
             <button onClick={()=>{onSearch(getRandomNumber())}}>Random</button>
+            <button>
+                <NavLink to = "/favorites">Favorites</NavLink>
+            </button>
+
         </div>
     )
 }

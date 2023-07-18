@@ -18,7 +18,7 @@ function generateCards(){
 }
 
    return(
-    <div className={style.cards}>
+    <div>
       {generateCards()}
     </div>
    )

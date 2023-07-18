@@ -1,5 +1,5 @@
 import { useState } from "react";
-import validation from "../Validation";
+import validation from "../Nav/Validation/Validation";
 
 const Form = ({login}) => {
 const [errors, setErrors] = useState({});
@@ -37,7 +37,7 @@ const handlerChange = (event) => {
             <input name="password" type="text"  onChange={handlerChange} value={userData.password} />
             {errors.password && <p>{errors.password}</p>}
 
-            <button onClick={handleSubmit}>Enviar</button>
+            <button onClick={handleSubmit}>Submit</button>
         </form>
     )
 }
