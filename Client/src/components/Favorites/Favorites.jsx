@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { filterCards, orderCards } from "../../redux/action";
 import { useDispatch } from "react-redux";
 
-const Favorites = ({ myFavorites }) => {
+const Favorites = (props) => {
   const dispatch = useDispatch();
 
   const handleOrder = (event) => {
@@ -25,7 +25,7 @@ const Favorites = ({ myFavorites }) => {
         <option value="Genderless">Genderless</option>
         <option  value="unknown">Unknown</option>
       </select>
-      {myFavorites?.map((fav) => {
+      {props.myFavorites?.map((fav) => {
         return (
           <Card
             key={fav.id}
@@ -35,7 +35,7 @@ const Favorites = ({ myFavorites }) => {
             gender={fav.gender}
             origin={fav.origin}
             image={fav.image}
-            onClose={fav.onClose}
+            onClose={props.onClose}
             id={fav.id}
           />
         );

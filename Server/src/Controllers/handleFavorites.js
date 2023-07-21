@@ -4,16 +4,17 @@ const postFav = (req, res) => {
   let character = req.body;
   myFavorites.push(character);
 
-  return res.json(myFavorites);
+  return res.status(200).json(myFavorites);
 };
 
 const deleteFav = (req, res) => {
-  const { id } = req.body;
-  const myFavorites = myFavorites.filter((element) => element.id !== +id);
+  let { id } = req.body;
+  console.log(id);
+  myFavorites = myFavorites.filter((element) => element.id !== +id);
   return res.json(myFavorites);
 };
 
 module.exports = {
-    postFav,
-    deleteFav
-}
+  postFav,
+  deleteFav,
+};
