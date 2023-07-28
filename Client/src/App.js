@@ -16,8 +16,8 @@ function App() {
   const [characters, setCharacters] = useState([]);
 
   const [access, setAccess] = useState(false);
-  const EMAIL = "yo@g.com";
-  const PASSWORD = "asd1234";
+  // const EMAIL = "yo@g.com";
+  // const PASSWORD = "asd1234";
 
   // function login(userData) {
   //   const { email, password } = userData;
